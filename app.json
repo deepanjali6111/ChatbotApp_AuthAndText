@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "c9942e98-0f77-4375-bbf8-ea323a7b1450"
+      }
+    },
+    "android": {
+      "package": "com.deepanjali6111.chatgpt"
+    }
+  }
+}
