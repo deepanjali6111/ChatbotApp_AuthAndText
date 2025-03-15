@@ -1,5 +1,6 @@
 {
   "expo": {
+    "newArchEnabled": true,
     "extra": {
       "eas": {
         "projectId": "c9942e98-0f77-4375-bbf8-ea323a7b1450"

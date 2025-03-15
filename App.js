@@ -1,13 +1,14 @@
-// App.js
 import React, { useState, useEffect } from "react";
 import { View, Text, ActivityIndicator } from "react-native";
 import * as Font from "expo-font";
 import AppNavigation from "./navigations/AppNavigation";
 import { FirebaseProvider } from "./firebase/FirebaseProvider";
+import { ThemeProvider } from './contexts/ThemeContext';
 
 const loadFonts = async () => {
     await Font.loadAsync({
-        "CustomFont": require("./assets/fonts/Poppins-Bold.ttf"),
+        "Poppins-Bold": require("./assets/fonts/Poppins-Bold.ttf")
+
     });
 };
 
@@ -28,8 +29,10 @@ export default function App() {
     }
 
     return (
-        <FirebaseProvider>
-            <AppNavigation />
-        </FirebaseProvider>
+        <ThemeProvider>
+            <FirebaseProvider>
+                <AppNavigation />
+            </FirebaseProvider>
+        </ThemeProvider>
     );
 }

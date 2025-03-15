@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from "react-native";
 import axios from "axios";
 
-const API_KEY = "YOUR_API_KEY"; //  Replace with your Google API Key
+const API_KEY = "API_KEY_HERE"; //  Replace with your Google API Key
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);

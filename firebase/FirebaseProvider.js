@@ -1,4 +1,5 @@
 // firebase/FirebaseProvider.js
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth } from './firebaseConfi';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
